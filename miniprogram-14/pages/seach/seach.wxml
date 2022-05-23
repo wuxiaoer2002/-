@@ -1,0 +1,23 @@
+<!--pages/seach/seach.wxml-->
+<view class="searchcontainer">
+<view class="search">
+<view class="iconfont icon-sousuo sousuo"></view>
+<input type="text" bindchange="tosuggest" placeholder="{{showKeyword}}" bindinput="getinputvalue"/>
+</view>
+<!--搜索结果-->
+<block>
+    <view class="searchresult" wx:for="{{suggest}}" wx:key="id">
+    <text class="iconfont .icon-sousuo"></text>
+    <text>{{item.name}}</text>
+</view>
+</block>
+<!--热搜列表-->
+<block>
+    <view class="hotlist">
+        <view class="listitem" wx:for="{{hot}}" wx:key="source">
+            <text class="count">{{index+1}}</text>
+            <text>{{item.searchWord}}</text>
+      </view>
+</view>
+</block>
+</view>

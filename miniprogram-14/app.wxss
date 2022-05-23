@@ -1,0 +1,5 @@
+/**app.wxss**/
+@import "/iconcss/iconcss.wxss";
+page {
+height: 100%;
+}

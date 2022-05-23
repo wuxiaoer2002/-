@@ -1,0 +1,41 @@
+{
+    "pages": [
+        "pages/index1/index1",
+        "pages/seach/seach",
+        "pages/recommendsong/recommendsong",
+        "pages/songDetail/songdetail",
+        "pages/songci/songci",
+        "pages/index2/index2",
+        "pages/login/login",
+        "pages/index/index"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#DC143C",
+        "navigationBarTitleText": "网易云音乐",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "list": [
+            {
+                "pagePath": "pages/index1/index1",
+                "text": "首页",
+                "iconPath": "/pages/image/tabbar/sy.png",
+                "selectedIconPath": "/pages/image/tabbar/sy1.png"
+            },
+            {
+                "pagePath": "pages/index2/index2",
+                "text": "我的",
+                "iconPath": "/pages/image/tabbar/wd.png",
+                "selectedIconPath": "/pages/image/tabbar/wd1.png"
+            }
+        ]
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json",
+    "lazyCodeLoading": "requiredComponents",
+    "requiredBackgroundModes": [
+        "audio",
+        "location"
+    ]
+}

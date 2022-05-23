@@ -1,0 +1,44 @@
+/* pages/recommendsong/recommendsong.wxss */
+.listcontainer{
+    padding: 0 20rpx;
+    border-radius:30rpx;
+    background: #fff;
+}
+.listheader{
+    height: 80rpx;
+    line-height: 80rpx;
+}
+.listheader>.changemore{
+    float: right;
+}
+.scrollitem{
+    display: flex;
+    position: relative;
+    margin: 30rpx 0;
+}
+.scrollitem>image{
+    width: 80rpx;
+    height: 80rpx;
+    border-radius: 8rpx;
+}
+.musicinfo{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30rpx;
+}
+.musicinfo>text{
+    height: 40rpx;
+    line-height: 40rpx;
+    font-size:28rpx;
+    max-width: 400rpx;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.scrollitem>.iconfont{
+    position: absolute;
+    right: 0;
+    width: 80rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+}

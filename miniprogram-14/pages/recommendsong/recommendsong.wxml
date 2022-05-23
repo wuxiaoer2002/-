@@ -1,0 +1,20 @@
+<!--pages/recommendsong/recommendsong.wxml-->
+<view class="recommendsongcontainer">
+    <view class="listcontainer">
+    <view class="listheader">
+    <text>播放全部</text>
+    <text class="changemore">多选</text>
+    </view>
+    <scroll-view scroll-y class="listscroll">
+    <view class="scrollitem" bindtap="tosongdetail" wx:for="{{hotSongslist}}" wx:key="id" data-song="{{item}}">
+    <image src="{{item.al.picUrl}}"></image>
+    <view class="musicinfo">
+    <text class="musicname">{{item.name}}</text>
+   
+    <text class="author">{{hotSongslist[0].ar[0].name}}</text>
+    </view>
+    <text class="iconfont icon-sangedian"></text>
+    </view>
+    </scroll-view>
+    </view>
+</view>

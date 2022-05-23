@@ -1,0 +1,30 @@
+<view class="songDetailContainer">
+<view class="author">{{song.ar[0].name}}</view>
+<view class="cirle"></view>
+<image class="needle {{isplay?'needleRotate':''}}" src="/pages/image/songdetail/needle.png"></image>
+<view class="discContainer {{isplay?'discAnimation':''}}">
+<image class="disc" src="/pages/image/songdetail/disc.png"></image>
+<image class="musicimg" src="{{song.al.picUrl}}"></image>
+</view>
+<!-- <scroll-view class="songci" scroll-y >{{songci.lyric}}</scroll-view> -->
+<!--底部控制-->
+<view class="musiccontrol">
+<text class="iconfont icon-suijibofang"></text>
+<text class="iconfont icon-zuobofang" bindtap="leftnext"></text>
+<text class="iconfont {{isplay?'icon-zanting':'icon-zanting1'}} big" bindtap="handlemusicplay"></text>
+<text class="iconfont icon-youbofang" bindtap="rightnext" ></text>
+<text class="iconfont icon-gequliebiao"></text>
+</view>
+<!--进度条控制-->
+<view class="progresscontrol">
+<text>00:00</text>
+<!--总进度条-->
+<view class="progress">
+<!--实时进度条-->
+<view class="progress1">
+<view class="progress1cirle"></view>
+</view>
+</view>
+<text>00:00</text>
+</view>
+</view>

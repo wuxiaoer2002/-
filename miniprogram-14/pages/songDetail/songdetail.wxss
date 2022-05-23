@@ -1,0 +1,127 @@
+/* pages/songDetail/songdetail.wxss */
+.songDetailContainer{
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*底座*/
+.cirle{
+    position: relative;
+    z-index: 100;
+    width: 60rpx;
+    height: 60rpx;
+    border-radius: 50%;
+    background: #fff;
+    margin: 10rpx 0;
+}
+/*摇杆*/
+.needle{
+    position: relative;
+    z-index: 99;
+    top: -40rpx;
+    left: 60rpx;
+    width: 192rpx;
+    height: 274rpx;
+    transform-origin: 40rpx 0;
+    transform: rotate(-20deg);
+    transition: transform 1s;
+}
+.needleRotate{
+    transform: rotate(0deg);
+}
+/*磁盘*/
+.discContainer{
+    position: relative;
+    top: -170rpx;
+    width: 598rpx;
+    height: 598rpx;
+}
+.discAnimation{
+    animation: disc 3s linear infinite;
+    animation-delay: 1s;
+}
+@keyframes disc{
+    from{}
+    to{
+        transform: rotate(360deg);
+    }
+}
+.disc{
+    width: 598rpx;
+    height: 598rpx;
+}
+.musicimg{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 370rpx;
+    height: 370rpx;
+    border-radius: 50%;
+}
+/*底部控制*/
+.musiccontrol{
+    position: absolute;
+    bottom: 40rpx;
+    left: 0;
+    border-top: 1rpx solid #fff;
+    width: 100%;
+    display: flex;
+}
+.musiccontrol text{
+    width: 20%;
+    height: 120rpx;
+    line-height: 120rpx;
+    text-align: center;
+    font-size: 50rpx;
+    color: #fff;
+}
+.musiccontrol text.big{
+    font-size: 80rpx;
+}
+.songci{
+    position: fixed;
+    bottom: 180rpx;
+    left: 110rpx;
+    width: 600rpx;
+    height: 200rpx;
+}
+/*进度条*/
+.progresscontrol{
+    position: absolute;
+    bottom: 200rpx;
+    width: 640rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    display: flex;
+}
+.progress{
+    position: relative;
+    width: 450rpx;
+    height: 4rpx;
+    background: rgba(0, 0, 0, 0.4);
+    margin: auto;
+}
+/*实时进度条*/
+.progress1{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100rpx;
+    height: 4rpx;
+    background: red;
+}
+.progress1cirle{
+    width: 12rpx;
+    height: 12rpx;
+    position: absolute;
+    right: -12rpx;
+    top: -4rpx;
+    background: #fff;
+    border-radius:50%;
+}
